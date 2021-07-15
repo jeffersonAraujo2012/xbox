@@ -1,0 +1,8 @@
+@import "sass/header/header";
+@import "sass/header/nav-header";
+
+$font-padrao: 'Hind Siliguri', sans-serif;
+
+body button{
+    font-family: $font-padrao;
+}

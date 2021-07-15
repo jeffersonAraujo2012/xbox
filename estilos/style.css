@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  height: 50px;
+  padding: 0 75px; }
+  header .logo {
+    display: flex;
+    align-items: center; }
+    header .logo .logo__principal {
+      padding-right: 20px;
+      border-right: 2px solid black; }
+    header .logo img {
+      height: 23px; }
+
+.nav-principal {
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
+.nav-botao {
+  height: calc(100% - 4px);
+  background-color: white;
+  border-radius: 0%;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: white;
+  cursor: pointer;
+  color: #262626;
+  display: flex;
+  align-items: center;
+  padding: 0 10px; }
+  .nav-botao .nav-botao__texto {
+    border-bottom: 2px solid white; }
+  .nav-botao .icone-seta-abaixo {
+    color: #262626;
+    height: 10px;
+    margin-left: 5px; }
+
+.nav-botao:hover .nav-botao__texto {
+  border-bottom-color: #262626; }
+
+.nav-botao:active {
+  border-color: black; }
+
+.nav-secundario {
+  display: flex;
+  align-items: center;
+  margin-left: auto; }
+
+.nav-secundario__login-icone {
+  height: 30px; }
+
+body button {
+  font-family: "Hind Siliguri", sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
