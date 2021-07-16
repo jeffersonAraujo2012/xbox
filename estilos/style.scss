@@ -1,8 +1,9 @@
 @import "sass/header/header";
 @import "sass/header/nav-header";
+@import "sass/corrossel-principal/carrossel-banners-principais";
 
 $font-padrao: 'Hind Siliguri', sans-serif;
 
-body button{
+body, button, section{
     font-family: $font-padrao;
 }

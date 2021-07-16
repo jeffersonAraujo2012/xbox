@@ -1,0 +1,62 @@
+@import "../uso-geral/banner-botao.scss";
+@import "../uso-geral/banner-nota.scss";
+
+.invisivel {
+    display: none !important;
+}
+
+.carrossel-banner {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 90%;
+        width: 38.5%;
+        margin-left: auto;
+        box-sizing: border-box;
+        padding-right: 110px;
+        line-height: 2.5rem;
+        .banner__nota {
+            @include banner-nota;
+        }
+        .banner__titulo {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 3.2rem;
+        }
+        .banner__texto {
+            font-size: 2.2rem;
+            margin: 2rem 0;
+        }
+        .banner-botao {
+            @include banner-botao(2px 20px, rgb(5,75,22), rgb(155,240,11));
+        }
+    }
+}
+
+.carrossel-banner:nth-child(1){
+    background-image: url("../Imagens/carrossel-fifa22.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carrossel-banner:nth-child(2){
+    background-image: url("../Imagens/carrossel-fallout76.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.carrossel-banner:nth-child(3){
+    background-image: url("../Imagens/carrossel-ufc4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    .banner-content {
+        margin: 0;
+        margin-left: 75px;
+    }
+}
