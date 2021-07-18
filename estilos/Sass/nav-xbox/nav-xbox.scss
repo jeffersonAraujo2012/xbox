@@ -1,0 +1,36 @@
+$imagem-cor: #107C10;
+
+.nav-xbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.nav-xbox-link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 35px;
+    margin-right: 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color: $imagem-cor;
+}
+
+.nav-xbox-link__texto {
+    margin-top: 5px;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 1px;
+    transition: 0.3s;
+}
+
+.nav-xbox-link:hover .nav-xbox-link__texto{
+    border-bottom-color: $imagem-cor;
+}
+
+.nav-xbox-link__imagem {
+    height: 60px;
+}
