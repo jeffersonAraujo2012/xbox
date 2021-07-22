@@ -1,0 +1,71 @@
+@import "../uso-geral/banner-nota.scss";
+@import "../uso-geral/banner-botao.scss";
+
+.banners-grid-container--2 {
+    display: grid;
+    grid-template: 
+                "b1 b3" 380px
+                "b2 b3" 380px
+                "b2 b4" 380px / 1fr 1fr;
+    gap: 5px;
+    margin: 8px;
+}
+
+.banners-grid-container--2 .banner {
+    position: relative;
+    color: white;
+    .banner-botao {
+        @include banner-botao(0px, white, transparent);
+    }
+    .banner-botao:hover {
+        @include banner-botao--hover(rgb(155,240,11));
+    }
+}
+
+.banners-grid-container--2 .banner:nth-child(1) {
+    grid-area: b1;
+    .banner__background {
+        background-image: url("../img/banner-t2-flight-simulator.jpg");
+    }
+    .banner__nota {
+        @include banner-nota(rgb(255,216,0),black);
+    }
+}
+
+.banners-grid-container--2 .banner:nth-child(2) {
+    grid-area: b3;
+    .banner__background {
+        background-image: url("../img/banner-t1-deaths-door.jpg");
+    }
+}
+
+.banners-grid-container--2 .banner:nth-child(3) {
+    grid-area: b2;
+    .banner__background {
+        background-image: url("../img/banner-t1-lost-judment.jpg");
+    }
+    .banner-botao {
+        @include banner-botao(2px 20px, rgb(5,75,22), rgb(155,240,11));
+    }
+    .banner-botao:hover {
+        @include banner-botao--hover(rgb(5,75,22),rgb(139,216,10));
+    }
+}
+
+.banners-grid-container--2 .banner:nth-child(4) {
+    grid-area: b4;
+    background: white;
+    color: black;
+    .banner__background {
+        background-image: url("../img/banner-t2-forza-horizon.jpg");
+    }
+    .banner__nota {
+        @include banner-nota(rgb(255,216,0),black);
+    }
+    .banner-botao {
+        @include banner-botao(0,black,transparent);
+    }
+    .banner-botao:hover {
+        @include banner-botao--hover;
+    }
+}

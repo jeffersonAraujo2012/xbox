@@ -36,15 +36,16 @@
 //     display: inline-block;
 // }
 
-@mixin banner-botao--hover($cor-do-hover: black) {
+@mixin banner-botao--hover($hover-texto: black,$hover-fundo: transparent) {
+    background: $hover-fundo;
     cursor: pointer;
-        color: $cor-do-hover;
-        .banner-botao__icone {
-            fill: $cor-do-hover;
-        }
-        .banner-botao__texto {
-            text-decoration: underline;
-            text-decoration-thickness: 2px;
-            text-underline-offset: 2px;
-        }
+    color: $hover-texto;
+    .banner-botao__icone {
+        fill: $hover-texto;
+    }
+    .banner-botao__texto {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 2px;
+    }
 }

@@ -31,6 +31,10 @@
   .banner-content { z-index: 2;}
 }
 
+.banner:hover {
+  cursor: pointer;
+}
+
 .banner--1 {
   display: flex;
   flex-direction: column;
