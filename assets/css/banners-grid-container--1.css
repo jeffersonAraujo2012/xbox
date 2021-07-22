@@ -1,0 +1,321 @@
+@keyframes background-hover {
+  0% {
+    background-size: cover; }
+  10% {
+    background-size: 101.5%; }
+  20% {
+    background-size: 103%; }
+  30% {
+    background-size: 104.5%; }
+  40% {
+    background-size: 106%; }
+  50% {
+    background-size: 107.5%; }
+  60% {
+    background-size: 109%; }
+  70% {
+    background-size: 110.5%; }
+  80% {
+    background-size: 112%; }
+  90% {
+    background-size: 113.5%; }
+  100% {
+    background-size: 115%; } }
+
+@keyframes background-hover-out {
+  100% {
+    background-size: cover; }
+  90% {
+    background-size: 101.5%; }
+  80% {
+    background-size: 103%; }
+  70% {
+    background-size: 104.5%; }
+  60% {
+    background-size: 106%; }
+  50% {
+    background-size: 107.5%; }
+  40% {
+    background-size: 109%; }
+  30% {
+    background-size: 110.5%; }
+  20% {
+    background-size: 112%; }
+  10% {
+    background-size: 113.5%; }
+  0% {
+    background-size: 115%; } }
+
+.banner {
+  background-color: #107c10; }
+  .banner .banner-content {
+    z-index: 2; }
+
+.banner--1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 80px 40px; }
+  .banner--1 .banner__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    background-size: cover; }
+
+.banner--1 .banner__titulo {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  z-index: 2; }
+
+.banner--1 .banner__texto {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin: 1.5rem 0;
+  z-index: 2; }
+
+.banner--2 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0px; }
+  .banner--2 .banner__background {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    animation: background-hover-out 0.3s;
+    animation-fill-mode: forwards;
+    background-size: 115%; }
+  .banner--2 .banner__background:hover {
+    background-size: cover;
+    animation: background-hover 0.3s;
+    animation-fill-mode: forwards; }
+  .banner--2 .banner-content {
+    position: relative;
+    width: 50%;
+    padding: 0px 40px;
+    box-sizing: border-box; }
+
+.banner--2 .banner__titulo {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.45rem;
+  z-index: 2; }
+
+.banner--2 .banner__texto {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin: 1.5rem 0;
+  z-index: 2; }
+
+.banners-grid-container--1 {
+  display: grid;
+  grid-template: "b1 b3" 380px "b1 b4" 380px "b2 b4" 380px / 1fr 1fr;
+  gap: 5px;
+  margin: 8px; }
+
+.banners-grid-container--1 .banner:nth-child(1) {
+  grid-area: b1;
+  color: white;
+  position: relative; }
+  .banners-grid-container--1 .banner:nth-child(1) .banner__background {
+    background-image: url("../img/banner-t1-f1.jpg"); }
+  .banners-grid-container--1 .banner:nth-child(1) .banner-botao {
+    padding: 0;
+    color: white;
+    display: flex;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    width: fit-content;
+    border: none;
+    transition: 0.2s;
+    z-index: 2; }
+    .banners-grid-container--1 .banner:nth-child(1) .banner-botao .banner-botao__icone {
+      position: relative;
+      top: -1px;
+      height: 1.2rem;
+      fill: white;
+      transition: inherit; }
+    .banners-grid-container--1 .banner:nth-child(1) .banner-botao .banner-botao__texto {
+      text-align: left;
+      display: inline-flex;
+      align-items: center;
+      line-height: 0.9rem;
+      height: 1.6rem;
+      transition: inherit; }
+  .banners-grid-container--1 .banner:nth-child(1) .banner-botao:hover {
+    cursor: pointer;
+    color: #9bf00b; }
+    .banners-grid-container--1 .banner:nth-child(1) .banner-botao:hover .banner-botao__icone {
+      fill: #9bf00b; }
+    .banners-grid-container--1 .banner:nth-child(1) .banner-botao:hover .banner-botao__texto {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 2px; }
+
+.banners-grid-container--1 .banner:nth-child(2) {
+  grid-area: b3;
+  color: white;
+  position: relative; }
+  .banners-grid-container--1 .banner:nth-child(2) .banner__background {
+    background-image: url("../img/banner-t2-game-pass.jpg"); }
+  .banners-grid-container--1 .banner:nth-child(2) .banner-botao {
+    padding: 0;
+    color: white;
+    display: flex;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    width: fit-content;
+    border: none;
+    transition: 0.2s;
+    z-index: 2; }
+    .banners-grid-container--1 .banner:nth-child(2) .banner-botao .banner-botao__icone {
+      position: relative;
+      top: -1px;
+      height: 1.2rem;
+      fill: white;
+      transition: inherit; }
+    .banners-grid-container--1 .banner:nth-child(2) .banner-botao .banner-botao__texto {
+      text-align: left;
+      display: inline-flex;
+      align-items: center;
+      line-height: 0.9rem;
+      height: 1.6rem;
+      transition: inherit; }
+    .banners-grid-container--1 .banner:nth-child(2) .banner-botao .banner-botao__icone {
+      top: 3px; }
+    .banners-grid-container--1 .banner:nth-child(2) .banner-botao .banner-botao__texto {
+      display: inline-block;
+      height: 1rem; }
+  .banners-grid-container--1 .banner:nth-child(2) .banner-botao:hover {
+    cursor: pointer;
+    color: #9bf00b; }
+    .banners-grid-container--1 .banner:nth-child(2) .banner-botao:hover .banner-botao__icone {
+      fill: #9bf00b; }
+    .banners-grid-container--1 .banner:nth-child(2) .banner-botao:hover .banner-botao__texto {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 2px; }
+
+.banners-grid-container--1 .banner:nth-child(3) {
+  grid-area: b2;
+  color: white;
+  position: relative; }
+  .banners-grid-container--1 .banner:nth-child(3) .banner-content {
+    left: calc(50%); }
+  .banners-grid-container--1 .banner:nth-child(3) .banner__background {
+    background-image: url("../img/banner-t2-age-of-empires-iv.jpg");
+    left: 0px; }
+  .banners-grid-container--1 .banner:nth-child(3) .banner-botao {
+    padding: 0;
+    color: white;
+    display: flex;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    width: fit-content;
+    border: none;
+    transition: 0.2s;
+    z-index: 2; }
+    .banners-grid-container--1 .banner:nth-child(3) .banner-botao .banner-botao__icone {
+      position: relative;
+      top: -1px;
+      height: 1.2rem;
+      fill: white;
+      transition: inherit; }
+    .banners-grid-container--1 .banner:nth-child(3) .banner-botao .banner-botao__texto {
+      text-align: left;
+      display: inline-flex;
+      align-items: center;
+      line-height: 0.9rem;
+      height: 1.6rem;
+      transition: inherit; }
+  .banners-grid-container--1 .banner:nth-child(3) .banner-botao:hover {
+    cursor: pointer;
+    color: #9bf00b; }
+    .banners-grid-container--1 .banner:nth-child(3) .banner-botao:hover .banner-botao__icone {
+      fill: #9bf00b; }
+    .banners-grid-container--1 .banner:nth-child(3) .banner-botao:hover .banner-botao__texto {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 2px; }
+  .banners-grid-container--1 .banner:nth-child(3) .banner__nota {
+    text-transform: uppercase;
+    background: #ffd800;
+    color: black;
+    padding: 1px 7px;
+    font-size: small;
+    width: fit-content;
+    letter-spacing: 1px;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    z-index: 2; }
+
+.banners-grid-container--1 .banner:nth-child(4) {
+  grid-area: b4;
+  position: relative; }
+  .banners-grid-container--1 .banner:nth-child(4) .banner__background {
+    background-image: url("../img/banner-t1-controle.jpg"); }
+  .banners-grid-container--1 .banner:nth-child(4) .banner-botao {
+    padding: 0;
+    color: black;
+    display: flex;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    width: fit-content;
+    border: none;
+    transition: 0.2s;
+    z-index: 2; }
+    .banners-grid-container--1 .banner:nth-child(4) .banner-botao .banner-botao__icone {
+      position: relative;
+      top: -1px;
+      height: 1.2rem;
+      fill: black;
+      transition: inherit; }
+    .banners-grid-container--1 .banner:nth-child(4) .banner-botao .banner-botao__texto {
+      text-align: left;
+      display: inline-flex;
+      align-items: center;
+      line-height: 0.9rem;
+      height: 1.6rem;
+      transition: inherit; }
+  .banners-grid-container--1 .banner:nth-child(4) .banner-botao:hover {
+    cursor: pointer;
+    color: black; }
+    .banners-grid-container--1 .banner:nth-child(4) .banner-botao:hover .banner-botao__icone {
+      fill: black; }
+    .banners-grid-container--1 .banner:nth-child(4) .banner-botao:hover .banner-botao__texto {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 2px; }
+  .banners-grid-container--1 .banner:nth-child(4) .banner__nota {
+    text-transform: uppercase;
+    background: #ffd800;
+    color: black;
+    padding: 1px 7px;
+    font-size: small;
+    width: fit-content;
+    letter-spacing: 1px;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    z-index: 2; }

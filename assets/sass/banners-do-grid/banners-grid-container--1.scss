@@ -1,0 +1,87 @@
+@import "banners";
+@import "../uso-geral/banner-nota.scss";
+@import "../uso-geral/banner-botao.scss";
+
+.banners-grid-container--1 {
+    display: grid;
+    grid-template: 
+                "b1 b3" 380px
+                "b1 b4" 380px
+                "b2 b4" 380px / 1fr 1fr;
+    gap: 5px;
+    margin: 8px;
+}
+
+.banners-grid-container--1 .banner:nth-child(1) {
+    grid-area: b1;
+    color: white;
+    position: relative;
+    .banner__background {
+        background-image: url("../img/banner-t1-f1.jpg");
+    }
+    .banner-botao {
+        @include banner-botao($padding: 0, $color: white, $background: transparent);
+    }
+    .banner-botao:hover {
+        @include banner-botao--hover(rgb(155,240,11));
+    }
+}
+.banners-grid-container--1 .banner:nth-child(2) {
+    grid-area: b3;
+    color: white;
+    position: relative;
+    .banner__background {
+        background-image: url("../img/banner-t2-game-pass.jpg");
+    }
+    .banner-botao {
+        @include banner-botao($padding: 0, $color: white, $background: transparent);
+        .banner-botao__icone {
+            top: 3px;
+        }
+        .banner-botao__texto {
+            display: inline-block;
+            height: 1rem;
+        }
+    }
+    .banner-botao:hover {
+        @include banner-botao--hover(rgb(155,240,11));
+    }
+
+}
+.banners-grid-container--1 .banner:nth-child(3) {
+    grid-area: b2;
+    color: white;
+    position: relative;
+    .banner-content {
+        left: calc(50%);
+    }
+    .banner__background {
+        background-image: url("../img/banner-t2-age-of-empires-iv.jpg");
+        left: 0px;
+    }
+    .banner-botao {
+        @include banner-botao($padding: 0, $color: white, $background: transparent);
+    }
+    .banner-botao:hover {
+        @include banner-botao--hover(rgb(155,240,11));
+    }
+    .banner__nota {
+        @include banner-nota(rgb(255,216,0),black);
+    } 
+}
+.banners-grid-container--1 .banner:nth-child(4) {
+    grid-area: b4;
+    position: relative;
+    .banner__background {
+        background-image: url("../img/banner-t1-controle.jpg");
+    }
+    .banner-botao {
+        @include banner-botao($padding: 0, $color: black, $background: transparent);
+    }
+    .banner-botao:hover {
+        @include banner-botao--hover(black);
+    }
+    .banner__nota {
+        @include banner-nota(rgb(255,216,0),black);
+    } 
+}

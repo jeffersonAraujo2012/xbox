@@ -1,0 +1,122 @@
+@keyframes background-hover {
+  0% {
+    background-size: cover; }
+  10% {
+    background-size: 101.5%; }
+  20% {
+    background-size: 103%; }
+  30% {
+    background-size: 104.5%; }
+  40% {
+    background-size: 106%; }
+  50% {
+    background-size: 107.5%; }
+  60% {
+    background-size: 109%; }
+  70% {
+    background-size: 110.5%; }
+  80% {
+    background-size: 112%; }
+  90% {
+    background-size: 113.5%; }
+  100% {
+    background-size: 115%; } }
+
+@keyframes background-hover-out {
+  100% {
+    background-size: cover; }
+  90% {
+    background-size: 101.5%; }
+  80% {
+    background-size: 103%; }
+  70% {
+    background-size: 104.5%; }
+  60% {
+    background-size: 106%; }
+  50% {
+    background-size: 107.5%; }
+  40% {
+    background-size: 109%; }
+  30% {
+    background-size: 110.5%; }
+  20% {
+    background-size: 112%; }
+  10% {
+    background-size: 113.5%; }
+  0% {
+    background-size: 115%; } }
+
+.banner {
+  background-color: #107c10; }
+  .banner .banner-content {
+    z-index: 2; }
+
+.banner--1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 80px 40px; }
+  .banner--1 .banner__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    background-size: cover; }
+
+.banner--1 .banner__titulo {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  z-index: 2; }
+
+.banner--1 .banner__texto {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin: 1.5rem 0;
+  z-index: 2; }
+
+.banner--2 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0px; }
+  .banner--2 .banner__background {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    animation: background-hover-out 0.3s;
+    animation-fill-mode: forwards;
+    background-size: 115%; }
+  .banner--2 .banner__background:hover {
+    background-size: cover;
+    animation: background-hover 0.3s;
+    animation-fill-mode: forwards; }
+  .banner--2 .banner-content {
+    position: relative;
+    width: 50%;
+    padding: 0px 40px;
+    box-sizing: border-box; }
+
+.banner--2 .banner__titulo {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.45rem;
+  z-index: 2; }
+
+.banner--2 .banner__texto {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin: 1.5rem 0;
+  z-index: 2; }

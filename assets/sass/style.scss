@@ -1,0 +1,11 @@
+@import "assets/sass/header/header";
+@import "assets/sass/header/nav-header";
+@import "assets/sass/corrossel-principal/carrossel-banners-principais";
+@import "assets/sass/nav-xbox/nav-xbox";
+@import "assets/sass/banners-do-grid/banners-grid-container--1";
+
+$font-padrao: 'Hind Siliguri', sans-serif;
+
+body, button, section{
+    font-family: $font-padrao;
+}

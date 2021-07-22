@@ -1,0 +1,14 @@
+{
+  "name": "XBOX",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "scss:dev": "node-sass --watch assets/sass/style.scss -o assets/css/"
+  },
+  "repository": "https://github.com/jeffersonAraujo2012/xbox.git",
+  "author": "CodeAkio <siqueira_2004@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
