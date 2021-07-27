@@ -710,5 +710,35 @@ header {
     text-decoration-thickness: 2px;
     text-underline-offset: 2px; }
 
+.redes-sociais {
+  color: #616161;
+  display: flex;
+  align-items: center;
+  margin: 30px 75px; }
+  .redes-sociais .redes-sociais__link:hover {
+    background-color: gainsboro; }
+  .redes-sociais .redes-sociais__link:active {
+    border: 1px dashed black; }
+
+.redes-sociais__link {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  width: 22px;
+  background-repeat: no-repeat;
+  margin: 0 12px; }
+
+.redes-sociais .redes-sociais__link:nth-child(2) {
+  background-image: url("../img/ico-email.png"); }
+
+.redes-sociais .redes-sociais__link:nth-child(3) {
+  background-image: url("../img/ico-facebook.png"); }
+
+.redes-sociais .redes-sociais__link:nth-child(4) {
+  background-image: url("../img/ico-twitter.png"); }
+
+.redes-sociais .redes-sociais__link:nth-child(5) {
+  background-image: url("../img/ico-instagram.png"); }
+
 body, button, section {
   font-family: "Hind Siliguri", sans-serif; }
