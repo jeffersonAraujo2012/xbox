@@ -1,0 +1,38 @@
+@import "../uso-geral/banner-botao.scss";
+
+.banner-largo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 580px;
+    background: url("../img/banner-large-consoles.jpg");
+    background-size: cover;
+    color: white;
+    padding: 0px 450px;
+    margin: 0 8px;
+}
+
+.banner-largo__titulo {
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.banner-largo__texto {
+    margin: 3rem 0;
+    letter-spacing: 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.banner-largo{
+    .banner-botao {
+        align-items: center;
+        @include banner-botao(2px 20px, rgb(5,75,22), rgb(155,240,11));
+    }
+    .banner-botao:hover {
+        @include banner-botao--hover(rgb(5,75,22),rgb(139,216,10));
+    }
+}
