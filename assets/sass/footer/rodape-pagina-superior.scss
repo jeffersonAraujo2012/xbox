@@ -1,0 +1,28 @@
+.rodape-pagina-superior {
+    display: flex;
+    background: rgb(242,242,242);
+    padding: 30px 75px;
+}
+
+.rodape-lista {
+    width: 200px;
+    color: rgb(97,97,97);
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.rodape-lista-item {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    font-weight: normal;
+}
+
+.link-rodape{
+    text-decoration: none;
+    color: rgb(97,97,97);
+}
+
+.link-rodape:hover {
+    text-decoration: underline;
+    color: rgb(40,40,40);
+}

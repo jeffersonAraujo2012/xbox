@@ -740,5 +740,63 @@ header {
 .redes-sociais .redes-sociais__link:nth-child(5) {
   background-image: url("../img/ico-instagram.png"); }
 
+.rodape-pagina-superior {
+  display: flex;
+  background: #f2f2f2;
+  padding: 30px 75px; }
+
+.rodape-lista {
+  width: 200px;
+  color: #616161;
+  font-weight: 700;
+  margin-right: 20px; }
+
+.rodape-lista-item {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  font-weight: normal; }
+
+.link-rodape {
+  text-decoration: none;
+  color: #616161; }
+
+.link-rodape:hover {
+  text-decoration: underline;
+  color: #282828; }
+
+.rodape-pagina-inferior {
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  padding: 10px 75px 30px;
+  font-size: 0.8rem; }
+
+.selecao-de-idioma {
+  display: flex;
+  align-items: center; }
+
+.ico-language {
+  fill: #616161;
+  margin-right: 8px; }
+
+.nav-rodape {
+  display: flex;
+  align-items: center;
+  margin-left: auto; }
+
+.nav-rodape-lista {
+  display: flex;
+  align-items: flex-end;
+  color: #616161; }
+
+.nav-link {
+  text-decoration: none;
+  color: #616161;
+  margin-left: 20px; }
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #282828; }
+
 body, button, section {
   font-family: "Hind Siliguri", sans-serif; }

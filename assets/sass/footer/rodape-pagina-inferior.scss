@@ -1,0 +1,40 @@
+.rodape-pagina-inferior {
+    display: flex;
+    align-items: center;
+    background: rgb(242,242,242);
+    padding: 10px 75px 30px;
+    font-size: 0.8rem;
+}
+
+.selecao-de-idioma {
+    display: flex;
+    align-items: center;
+}
+
+.ico-language {
+    fill: rgb(97,97,97);
+    margin-right: 8px;
+}
+
+.nav-rodape {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-rodape-lista {
+    display: flex;
+    align-items: flex-end;
+    color: rgb(97,97,97);
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(97,97,97);
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: rgb(40,40,40);
+}
